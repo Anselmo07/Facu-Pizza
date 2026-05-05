@@ -1,13 +1,11 @@
 .hero {
   position: relative;
   height: 100vh;
-
-  /* Imagen de fondo */
-  background-image: url("/pizza-hero.jpg"); /* poné tu imagen en /public */
+  width: 100%;
+  background-image: url("../../assets//PizzPeople.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,10 +21,12 @@
 /* Contenido */
 .hero__content {
   position: relative;
-  text-align: center;
+  text-align: start;
   color: white;
   padding: 1rem;
-  max-width: 800px;
+  margin: 0 5% 0 5%;
+  padding: 0%;
+  width: 100%;
 }
 
 .hero__content h1 {
@@ -35,17 +35,21 @@
   margin-bottom: 1rem;
 }
 
+.hero__content span {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: palevioletred;
+}
+
 .hero__content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
 
-/* Botones */
 .hero__buttons {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: start;
 }
 
 .btn {
@@ -63,16 +67,4 @@
 
 .btn.primary:hover {
   background: #d62828;
-}
-
-/* Botón secundario */
-.btn.secondary {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-}
-
-.btn.secondary:hover {
-  background: white;
-  color: black;
 }

@@ -1,0 +1,76 @@
+
+import "./Card.css";
+
+import margarita from "../../assets/receta-pizza-margarita.jpg";
+import pepperoni from "../../assets/PizzaPeperoni.jpg";
+import cuatroQuesos from "../../assets/Pizza4quesos.jpg";
+import napolitana from "../../assets/PizzaNapoitana.jpeg";
+
+type Pizza = {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+};
+
+const pizzas: Pizza[] = [
+  {
+    id: 1,
+    name: "Margarita",
+    description: "Salsa de tomate, mozzarella y albahaca",
+    image: margarita,
+  },
+  {
+    id: 2,
+    name: "Pepperoni",
+    description: "Mozzarella y pepperoni",
+    image: pepperoni,
+  },
+  {
+    id: 3,
+    name: "Cuatro Quesos",
+    description: "Mozzarella, roquefort, parmesano y provolone",
+    image: cuatroQuesos,
+  },
+  {
+    id: 4,
+    name: "Napolitana",
+    description: "Tomate, mozzarella, ajo y orégano",
+    image: napolitana,
+  },
+];
+
+const Card = () => {
+    const phone = "549XXXXXXXXXX"; // 👈 tu número (con código país, ej: Argentina 549...)
+
+  const handleOrder = (pizzaName: string) => {
+    const message = `Hola! Quiero pedir una pizza ${pizzaName} 🍕`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
+  return (
+    <section className="menu">
+      <h2>Nuestras Pizzas</h2>
+
+      <div className="menu__grid">
+        {pizzas.map((pizza) => (
+          <div key={pizza.id} className="card">
+            <img src={pizza.image} alt={pizza.name} />
+
+            <div className="card__content">
+              <h3>{pizza.name}</h3>
+              <p>{pizza.description}</p>
+
+              <button onClick={() => handleOrder(pizza.name)}>
+                Pedir por WhatsApp
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Card;

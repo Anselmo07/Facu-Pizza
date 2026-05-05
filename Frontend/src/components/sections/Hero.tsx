@@ -6,12 +6,14 @@ const Hero = () => {
             <div className="hero__overlay" />
 
             <div className="hero__content">
-                <h1>Las mejores pizzas de la ciudad 🍕</h1>
+                <h1>Las mejores <br />
+                <span> PIZZAS </span> <br />
+                de la ciudad 🍕</h1>
                 <p>Ingredientes frescos, sabor increíble y entrega rápida</p>
 
                 <div className="hero__buttons">
                 <button className="btn primary">Pedir ahora</button>
-                <button className="btn secondary">Ver menú</button>
+                
                 </div>
             </div>
         </section>
