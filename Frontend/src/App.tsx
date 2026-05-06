@@ -1,5 +1,7 @@
 import Hero from "./components/sections/Hero";
 import Card from "./components/sections/Card";
+import AboutMe from "./components/sections/AboutMe";
+import AboutIcons from "./components/sections/AboutIcons";
 import "./App.css";
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <>
       <Hero />
       <Card />
+      <AboutMe />
+      <AboutIcons />
 
       {/* Secciones futuras */}
       {/* <Features /> */}

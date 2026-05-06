@@ -1,0 +1,25 @@
+.about-icons {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+}
+
+/* Contenedor */
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* 👈 importante para responsive */
+}
+
+/* Imágenes */
+.icons-container img {
+  width: 60px;   /* ajustá tamaño */
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.icons-container img:hover {
+  transform: scale(1.1);
+}
