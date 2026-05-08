@@ -1,0 +1,99 @@
+.contact {
+  position: relative;
+  padding: 6rem 2rem;
+
+  background-image: url("../../assets/pizzaWorking.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+/* Overlay oscuro */
+.contact__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Contenido */
+.contact__content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1100px;
+  width: 100%;
+
+  text-align: center;
+  color: white;
+}
+
+.contact__content h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.contact__content p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #ddd;
+}
+
+/* Cards */
+.contact__info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+
+  padding: 2rem;
+  border-radius: 16px;
+
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Botón */
+.contact__content button {
+  background: #25d366;
+  color: white;
+
+  padding: 1rem 2rem;
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.contact__content button:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
