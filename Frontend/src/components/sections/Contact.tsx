@@ -1,5 +1,7 @@
 import "./Contact.css";
 
+import ubicacion from "../../assets/location.png"
+
 const Contact = () => {
   const phone = "549XXXXXXXXXX";
 
@@ -13,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section id="location" className="contact">
       <div className="contact__overlay" />
 
       <div className="contact__content">
@@ -45,6 +47,13 @@ const Contact = () => {
         <button onClick={handleWhatsApp}>
           Contactar por WhatsApp
         </button>
+
+        <div className="contact-container">
+                <h2 className="contact-h2"> DIRECCIÓN </h2>
+                <a href="https://maps.app.goo.gl/yF8h6J8THi4bSQrPA" className="contact-a"><p className="contact-p">698 Victorio Coco Herbeta, E3100 Paraná, Entre Ríos.</p></a>
+                <a href="https://maps.app.goo.gl/yF8h6J8THi4bSQrPA" className="contact-maps"><img src={ubicacion} alt="location"/> </a>
+          </div>
+
       </div>
     </section>
   );

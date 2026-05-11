@@ -1,7 +1,8 @@
 .hero {
   position: relative;
   height: 100vh;
-  width: 100%;
+  margin-left: 8%;
+  margin-right: 8%;
   background-image: url("../../assets//PizzPeople.png");
   background-size: cover;
   background-position: center;

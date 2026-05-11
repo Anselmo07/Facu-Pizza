@@ -27,9 +27,32 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+
+  background-image:
+    url("/wallBody3.jpg"),
+    url("/wallBody2.jpeg");
+
+  background-position:
+    top center,
+    bottom center;
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    100% 65%,
+    100% 35%;
+
+  background-color: #121212;
 }
 
 /* Tipografía base */
+
+section {
+  scroll-margin-top: 120px;
+}
+
 body,
 input,
 button,

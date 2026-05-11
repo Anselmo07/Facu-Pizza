@@ -4,6 +4,9 @@
   color: white;
   margin-left: 8%;
   margin-right: 8%;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .deals__header {

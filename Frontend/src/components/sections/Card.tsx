@@ -50,7 +50,7 @@ const Card = () => {
   };
 
   return (
-    <section className="menu">
+    <section id="menu" className="menu">
       <h2>Nuestras Pizzas</h2>
 
       <div className="menu__grid">

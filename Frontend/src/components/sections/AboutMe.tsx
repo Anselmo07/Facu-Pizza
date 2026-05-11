@@ -26,7 +26,7 @@ const features = [
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about" className="about" >
       <div className="about__container">
         {/* Texto */}
         <div className="about__text">
