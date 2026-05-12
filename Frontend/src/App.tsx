@@ -7,6 +7,7 @@ import AboutMe from "./components/sections/AboutMe";
 import "./App.css";
 import Deals from "./components/sections/Deals";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       {/* <Menu /> */}
       {/* <Promos /> */}
       {/* <Testimonials /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

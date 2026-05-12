@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-import logo from "../../assets/pizza.png";
+import logo from "../../assets/chef.png";
 
 const Navbar = () => {
   const phone = "549XXXXXXXXXX";
