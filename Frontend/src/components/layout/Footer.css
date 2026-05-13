@@ -5,21 +5,17 @@
 .footer {
   width: 100%;
 
-  padding: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* Contenedor principal */
 .footer__container {
   width: 100%;
-  max-width: 1400px;
 
   background: #f7f7f7;
-
-  border-radius: 18px;
 
   padding: 2rem 3rem;
 

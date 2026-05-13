@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-import logo from "../../assets/chef.png";
+import logo from "../../assets/logo3.png";
 
 const Footer = () => {
   return (
