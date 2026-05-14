@@ -3,7 +3,7 @@ import "./Navbar.css";
 import logo from "../../assets/logo3.png";
 
 const Navbar = () => {
-  const phone = "549XXXXXXXXXX";
+  const phone = "5493434284291";
 
   const handleWhatsApp = () => {
     const message = "Hola! Quiero hacer un pedido 🍕";
@@ -27,7 +27,7 @@ const Navbar = () => {
         <a href="#location">UBICACIÓN</a>
 
         <button onClick={handleWhatsApp}>
-          ORDER ONLINE
+          ORDENAR ONLINE
         </button>
       </nav>
     </header>

@@ -2,31 +2,24 @@ import "./Deals.css";
 
 import margarita from "../../assets/receta-pizza-margarita.jpg";
 import combo from "../../assets/combo.png";
-import family from "../../assets/comboFamily.png";
 
 const deals = [
   {
     title: "Pizza Individual",
-    subtitle: "Ideal para una persona 🍕",
+    subtitle: "Ideal para dos personas 🍕",
     price: "$8.500",
     image: margarita,
   },
   {
     title: "Combo Pareja",
-    subtitle: "1 pizzas + bebida 🥤",
+    subtitle: "2 pizzas + bebida 🥤",
     price: "$18.000",
     image:combo,
-  },
-  {
-    title: "Combo Familiar",
-    subtitle: "3 pizzas grandes 🔥",
-    price: "$32.000",
-    image: family,
   },
 ];
 
 const Deals = () => {
-  const phone = "549XXXXXXXXXX";
+  const phone = "5493434284291";
 
   const handleOrder = (title: string) => {
     const message = `Hola! Quiero pedir el ${title} 🍕`;

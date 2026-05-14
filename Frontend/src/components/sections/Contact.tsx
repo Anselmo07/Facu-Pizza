@@ -3,7 +3,7 @@ import "./Contact.css";
 import ubicacion from "../../assets/location.png"
 
 const Contact = () => {
-  const phone = "549XXXXXXXXXX";
+  const phone = "5493434284291";
 
   const handleWhatsApp = () => {
     const message =
