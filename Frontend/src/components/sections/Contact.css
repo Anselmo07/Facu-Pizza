@@ -105,3 +105,14 @@
   transform: scale(1.05);
 }
 
+.contact-maps{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.contact-maps img{
+    width: 400px;
+    height: 250px;
+}
+

@@ -1,20 +1,20 @@
 import "./Deals.css";
 
 import margarita from "../../assets/receta-pizza-margarita.jpg";
-import combo from "../../assets/combo.png";
+import especial from "../../assets/combo.png";
 
 const deals = [
   {
-    title: "Pizza Individual",
-    subtitle: "Ideal para dos personas 🍕",
+    title: "Pizza Clásica",
+    subtitle: "Mozzarella artesanal recién horneada 🍕",
     price: "$8.500",
     image: margarita,
   },
   {
-    title: "Combo Pareja",
-    subtitle: "2 pizzas + bebida 🥤",
-    price: "$18.000",
-    image:combo,
+    title: "Pizza Especial",
+    subtitle: "Ingredientes premium y sabor único 🔥",
+    price: "$12.000",
+    image: especial,
   },
 ];
 
@@ -22,7 +22,8 @@ const Deals = () => {
   const phone = "5493434284291";
 
   const handleOrder = (title: string) => {
-    const message = `Hola! Quiero pedir el ${title} 🍕`;
+    const message = `Hola! Quiero pedir una ${title} 🍕`;
+
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
@@ -31,24 +32,36 @@ const Deals = () => {
   return (
     <section className="deals">
       <div className="deals__header">
-        <h2>Promociones Especiales</h2>
-        <p>Elegí tu combo favorito y pedí ahora</p>
+
+        <h2>Rotisería al Paso</h2>
+
+        <p>
+          Viernes a Domingo · 14:00 hs a 00:00 hs
+        </p>
+
       </div>
 
       <div className="deals__grid">
         {deals.map((deal, index) => (
           <div key={index} className="deal-card">
-            <img src={deal.image} alt={deal.title} />
+
+            <img
+              src={deal.image}
+              alt={deal.title}
+            />
 
             <div className="deal-card__content">
+
               <h3>{deal.title}</h3>
+
               <p>{deal.subtitle}</p>
 
               <span>{deal.price}</span>
 
               <button onClick={() => handleOrder(deal.title)}>
-                Pedir ahora
+                Pedir Ahora
               </button>
+
             </div>
           </div>
         ))}

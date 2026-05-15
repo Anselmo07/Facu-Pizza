@@ -38,8 +38,24 @@
 }
 
 .hero__content span {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: palevioletred;
+  background: linear-gradient(
+    90deg,
+    #ffb347,
+    #ff6b00
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 6rem;
+  font-weight: 900;
+
+  letter-spacing: 4px;
+
+  text-shadow:
+    0 5px 20px rgba(255,107,0,0.25);
+
+  display: inline-block;
 }
 
 .hero__content p {

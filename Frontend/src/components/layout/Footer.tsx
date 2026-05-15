@@ -1,11 +1,23 @@
 import "./Footer.css";
 
-import logo from "../../assets/logo3.png";
+import logo from "../../assets/logo2.png";
 import locationImg from "../../assets/location.png";
 
 const Footer = () => {
+
+  const phone = "5493434284291";
+
+  const handleWhatsApp = () => {
+    const message = "Hola! Quiero hacer un pedido 🍕";
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <footer className="footer">
+      
       <div className="footer__container">
 
         {/* LOGO */}
@@ -17,10 +29,9 @@ const Footer = () => {
         <div className="footer__links">
           <div className="footer__row">
             <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#location">Location</a>
-            <a href="#">Catering</a>
-            <a href="#">Contact</a>
+            <a href="#about">Nosotros</a>
+            <a href="#location">Ubicacion</a>
+            <a href="#">Contacto</a>
           </div>
 
           <div className="footer__row footer__small">
@@ -32,7 +43,7 @@ const Footer = () => {
 
         {/* UBICACION */}
         <a
-          href="https://maps.google.com"
+          href="https://maps.app.goo.gl/yF8h6J8THi4bSQrPA"
           target="_blank"
           className="footer__location"
         >
@@ -41,21 +52,21 @@ const Footer = () => {
             alt="Ubicación"
           />
 
-          <span>Our Location</span>
+          <span> Donde encontrarnos </span>
         </a>
 
         {/* HORARIOS */}
         <div className="footer__hours">
-          <h3>Opening Hours</h3>
+          <h3>Horarios de atencion</h3>
 
           <div className="hours__grid">
-            <span>Mon - Fri</span>
+            <span>Lunes - Viernes</span>
             <span>10:00 - 23:00</span>
 
-            <span>Saturday</span>
+            <span>Sabados</span>
             <span>11:00 - 01:00</span>
 
-            <span>Sunday</span>
+            <span>Domingos</span>
             <span>12:00 - 22:00</span>
           </div>
         </div>
@@ -63,13 +74,17 @@ const Footer = () => {
         {/* RIGHT SIDE */}
         <div className="footer__right">
           <div className="footer__icons">
-            <div className="circle">📍</div>
+            <div className="circle"> <a
+          href="https://maps.app.goo.gl/yF8h6J8THi4bSQrPA"
+          target="_blank"
+          className="footer__location"
+        >📍</a></div>
             <div className="circle">✉️</div>
             <div className="circle">🛒</div>
           </div>
 
-          <button className="footer__button">
-            Order Online
+          <button className="footer__button" onClick={handleWhatsApp}>
+            Ordenar Online
           </button>
         </div>
 
