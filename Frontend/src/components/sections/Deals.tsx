@@ -1,7 +1,7 @@
 import "./Deals.css";
 
-import margarita from "../../assets/receta-pizza-margarita.jpg";
-import especial from "../../assets/combo.png";
+import margarita from "../../assets/pizzaComun.png";
+import especial from "../../assets/pizzaCombo.png";
 
 const deals = [
   {

@@ -87,3 +87,68 @@
 .card__content button:hover {
   background: #d62828;
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .menu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .menu__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .menu {
+    padding: 2rem 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .menu h2 {
+    font-size: 1.8rem;
+  }
+
+  .menu h2::before,
+  .menu h2::after {
+    display: none;
+  }
+
+  .menu__grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .card img {
+    height: 240px;
+  }
+
+  .card__content {
+    padding: 1rem;
+  }
+
+  .card__content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card__content p {
+    font-size: 0.85rem;
+  }
+
+  .card__content button {
+    width: 100%;
+  }
+}

@@ -116,3 +116,77 @@
     height: 250px;
 }
 
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .contact {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 4rem 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border-radius: 20px;
+  }
+
+  .contact__content h2 {
+    font-size: 2rem;
+  }
+
+  .contact__content p {
+    font-size: 0.95rem;
+
+    margin-bottom: 2rem;
+  }
+
+  /* 3 cards lado a lado */
+  .contact__info {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.7rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .info-card h3 {
+    font-size: 0.7rem;
+  }
+
+  .info-card p {
+    font-size: 0.6rem;
+
+    margin: 0;
+  }
+
+  /* botón */
+  .contact__content button {
+    width: 100%;
+
+    max-width: 320px;
+  }
+
+  /* mapa */
+  .contact-maps img {
+    width: 100%;
+
+    max-width: 320px;
+
+    height: auto;
+  }
+}

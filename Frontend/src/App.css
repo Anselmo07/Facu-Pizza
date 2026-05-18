@@ -25,32 +25,33 @@ html {
 /* Altura base */
 body {
   min-height: 100vh;
+
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+
+  background-color: #121212;
 
   background-image:
     url("/wallBody3.jpg"),
     url("/wallBody2.jpeg");
 
-  background-position:
-    top center,
-    bottom center;
-
   background-repeat:
     no-repeat,
     no-repeat;
 
-  background-size:
-    100% 65%,
-    100% 35%;
+  background-position:
+    top center,
+    bottom center;
 
-  background-color: #121212;
+  background-size:
+    100% 60%,
+    100% 60%;
 }
 
 /* Tipografía base */
 
 section {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 180px;
 }
 
 body,
@@ -115,6 +116,28 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+
+  body {
+
+    background-image:
+      url("/wallMobileTop.jpg"),
+      url("/wallMobileBottom.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      top center,
+      bottom center;
+
+    background-size:
+      100% 55%,
+      100% 55%;
+  }
 }
 
 /* Root app */

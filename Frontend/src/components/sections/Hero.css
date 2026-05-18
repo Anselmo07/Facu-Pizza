@@ -3,7 +3,7 @@
   height: 100vh;
   margin-left: 8%;
   margin-right: 8%;
-  background-image: url("../../assets//PizzPeople.png");
+  background-image: url("../../assets//pizzaPeople.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,4 +85,60 @@
 
 .btn.primary:hover {
   background: #d62828;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+
+    min-height: 80vh;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding: 5rem 0 3rem 0;
+
+    background-position: center;
+  }
+
+  .hero__content {
+    text-align: center;
+
+    margin: 0;
+
+    padding: 1rem;
+  }
+
+  .hero__content h1 {
+    font-size: 2.2rem;
+
+    line-height: 1.2;
+  }
+
+  .hero__content span {
+    font-size: 4rem;
+
+    letter-spacing: 2px;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+
+    max-width: 300px;
+  }
 }

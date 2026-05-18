@@ -1,9 +1,9 @@
 
 import "./Card.css";
 
-import margarita from "../../assets/receta-pizza-margarita.jpg";
-import pepperoni from "../../assets/PizzaPeperoni.jpg";
-import cuatroQuesos from "../../assets/Pizza4quesos.jpg";
+import margarita from "../../assets/pizzaComun.png";
+import pepperoni from "../../assets/pizzaEspecial.png";
+import cuatroQuesos from "../../assets/pizzaFugazzeta.png";
 
 type Pizza = {
   id: number;

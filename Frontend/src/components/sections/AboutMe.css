@@ -226,6 +226,7 @@
     0 10px 25px rgba(230,126,34,0.3);
 
   transition: 0.3s ease;
+
 }
 
 .order-btn:hover {
@@ -233,40 +234,121 @@
 }
 
 /* =========================
-   RESPONSIVE
+   TABLET
 ========================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+
+  .about {
+    margin: 2rem;
+    padding: 4rem 2rem;
+  }
+
   .about__container {
     grid-template-columns: 1fr;
+
+    gap: 3rem;
   }
 
-  .about__right {
-    height: 400px;
-  }
-
-  .photo img {
-    width: 180px;
-    height: 250px;
-  }
-}
-
-@media (max-width: 700px) {
-  .about {
-    padding: 3rem 1.5rem;
-    margin: 2rem;
-  }
-
-  .about__buttons {
-    flex-direction: column;
+  .about__left {
+    text-align: center;
+    align-items: center;
   }
 
   .about__features {
     justify-content: center;
   }
 
+  .about__right {
+    height: 350px;
+  }
+
   .photo img {
-    width: 150px;
-    height: 220px;
+    width: 180px;
+    height: 240px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .about {
+    margin: 1rem;
+
+    padding: 3rem 1.2rem;
+
+    border-radius: 20px;
+  }
+
+  .about__left h2 {
+    font-size: 2.2rem;
+
+    text-align: center;
+  }
+
+  .about__left p {
+    font-size: 0.95rem;
+
+    text-align: center;
+
+    line-height: 1.6;
+  }
+
+  .about__buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .about__buttons button {
+    width: 100%;
+  }
+
+  .about__features {
+    gap: 1rem;
+  }
+
+  .feature__circle {
+    width: 55px;
+    height: 55px;
+
+    font-size: 1.3rem;
+  }
+
+  .feature span {
+    font-size: 0.7rem;
+  }
+
+  /* Fotos */
+
+  .about__right {
+    height: 330px;
+  }
+
+  .photo {
+    padding: 0.5rem;
+  }
+
+  .photo img {
+    width: 120px;
+    height: 170px;
+  }
+
+  .photo--1 {
+    left: 10%;
+  }
+
+  .photo--2 {
+    right: 10%;
+  }
+
+  .order-btn {
+    padding: 0.8rem 1.5rem;
+
+    font-size: 0.85rem;
   }
 }

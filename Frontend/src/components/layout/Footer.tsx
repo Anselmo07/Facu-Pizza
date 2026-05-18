@@ -64,10 +64,10 @@ const Footer = () => {
             <span>10:00 - 23:00</span>
 
             <span>Sabados</span>
-            <span>11:00 - 01:00</span>
+            <span>14:00 - 00:00</span>
 
             <span>Domingos</span>
-            <span>12:00 - 22:00</span>
+            <span>14:00 - 00:00</span>
           </div>
         </div>
 
@@ -77,7 +77,6 @@ const Footer = () => {
             <div className="circle"> <a
           href="https://maps.app.goo.gl/yF8h6J8THi4bSQrPA"
           target="_blank"
-          className="footer__location"
         >📍</a></div>
             <div className="circle">✉️</div>
             <div className="circle">🛒</div>

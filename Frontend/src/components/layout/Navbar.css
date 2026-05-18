@@ -104,3 +104,42 @@
     width: 90px;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.8rem 1rem;
+
+    gap: 1rem;
+  }
+
+  .navbar__logo img {
+    width: 70px;
+  }
+
+  .navbar__links {
+    gap: 0.7rem;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+  }
+
+  .navbar__links a {
+    font-size: 0.7rem;
+
+    letter-spacing: 0;
+  }
+
+  .navbar__links button {
+    padding: 0.5rem 0.8rem;
+
+    font-size: 0.7rem;
+
+    white-space: nowrap;
+  }
+}

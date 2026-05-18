@@ -47,7 +47,7 @@
 /* Imagen */
 .deal-card img {
   width: 100%;
-  height: 450px;
+  height: 570px;
   object-fit: cover;
 }
 
@@ -88,4 +88,73 @@
 
 .deal-card__content button:hover {
   background: #d62828;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .deals {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .deal-card img {
+    height: 420px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .deals {
+    padding: 3rem 1rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    border-radius: 20px;
+  }
+
+  .deals__header h2 {
+    font-size: 2rem;
+  }
+
+  /* 2 cards lado a lado */
+  .deals__grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+  }
+
+  .deal-card img {
+    height: 180px;
+  }
+
+  .deal-card__content {
+    padding: 1rem;
+  }
+
+  .deal-card__content h3 {
+    font-size: 1rem;
+  }
+
+  .deal-card__content p {
+    font-size: 0.8rem;
+  }
+
+  .deal-card__content span {
+    font-size: 1.3rem;
+  }
+
+  .deal-card__content button {
+    padding: 0.7rem;
+
+    font-size: 0.8rem;
+  }
 }
